@@ -1923,6 +1923,10 @@ headerbar.default-decoration button.titlebutton:not(.suggested-action):not(.dest
 /**************
  * Tree Views *
  **************/
+treeview {
+  padding: 1px;
+}
+
 treeview.view {
   background-color: #FFFFFF;
   border-left-color: rgba(0, 0, 0, 0.26);
