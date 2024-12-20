@@ -1803,6 +1803,13 @@ headerbar {
 /**************
  * Tree Views *
  **************/
+
+@if $compact == "false" {
+  treeview {
+    padding: 1px;
+  }
+}
+ 
 treeview.view {
   @at-root * {
     -GtkTreeView-horizontal-separator: 4;
