@@ -1542,7 +1542,11 @@ StScrollBar {
   }
 
   &-item-box {
-    font-weight: bold;
+    @if $variant == 'dark' {
+      font-weight: bold;
+    }@else{
+      font-weight: normal;
+    }
     background-image: none;
     transition-duration: 100ms;
     color: rgba(on($panel), 0.9);
@@ -1697,7 +1701,11 @@ StScrollBar {
   }
 
   &-item-box {
-    font-weight: bold;
+    @if $variant == 'dark' {
+      font-weight: bold;
+    }@else{
+      font-weight: normal;
+    }
     transition-duration: 100ms;
     border: none;
     margin: 0;
